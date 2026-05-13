@@ -2,5 +2,5 @@
 const timer = setInterval(() => {
   if (window2.closed) {
     window2=window.open('https://skelthepotatolord.github.io/CodeTester/','_blank','height=600 width=600');window2.resizeTo(screen.availWidth,screen.availHeight);window2.onresize=function(){window2.resizeTo(screen.availWidth,screen.availHeight)};let lastX=window2.screenX;let lastY=window2.screenY;setTimeout(()=>{window2.checkWindowPosition=function(){if(window2.screenX!==lastX||window2.screenY!==lastY) {window2.onresize();lastX=window2.screenX;lastY=window2.screenY;}}, 250);requestAnimationFrame(checkWindowPosition);};requestAnimationFrame(checkWindowPosition);
-  };window2.onresize=function(){window2.resizeTo(screen.availWidth,screen.availHeight)};
-}, 1000);"></body></html>
+  };
+}, 1000);window2.onresize=function(){window2.resizeTo(screen.availWidth,screen.availHeight)}"></body></html>
